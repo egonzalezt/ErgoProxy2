@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ergoproxy:
+    image: ${DOCKER_REGISTRY-}ergoproxy
+    build:
+      context: .
+      dockerfile: ErgoProxy/Dockerfile
